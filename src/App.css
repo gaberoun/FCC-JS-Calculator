@@ -1,0 +1,78 @@
+:root {
+  --light-beige: #F9EFDB;
+  --dark-beige: #EBD9B4;
+  --light-green: #9DBC98;
+  --dark-green: #638889;
+  --dark-gray: #393433;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+  border: 2px solid var(--dark-gray);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+button {
+  border-radius: 2px;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 7px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.buttons > :nth-child(16){
+  grid-column: 2 span;
+}
+.buttons > :nth-child(14){
+  grid-row: 2 span;
+}
+
+button {
+  border: none;
+  cursor: default;
+  &:hover {
+    background-color: gray;
+  }
+}
+
+#display-container {
+  background-color: var(--dark-gray);
+  margin-bottom: 7px;
+  border-radius: 2px;
+  color: white;
+  text-align: right;
+  padding: 5px 15px;
+  height: 60px;
+}
+
+#display-container div {
+  height: 35%;
+}
+
+.answer {
+  font-size: 1.7em;
+}
+
+.primary {
+  background-color: var(--dark-beige);
+}
+
+.secondary {
+  background-color: var(--light-green);
+}
+
+.ternary {
+  background-color: var(--dark-green);
+}
