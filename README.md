@@ -1,5 +1,4 @@
-#Build a JavaScript Calculator
-Note: React 18 has known incompatibilities with the tests for this project (see issue)
+Build a JavaScript Calculator
 
 Objective: Build an app that is functionally similar to this: https://javascript-calculator.freecodecamp.rocks/.
 
